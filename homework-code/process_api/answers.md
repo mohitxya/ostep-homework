@@ -23,12 +23,20 @@ Child has finished it's process.
 * The wait(NULL) command forces parent to wait till child finishes it's execution.
 
 3. "hello" and "goodbye": ensure child always prints first
-
 * One way to do this is by adding a wait statement before the parent starts it's execution.
 * **_without wait()_**: shared memory space to use a variable as flag, add delay in parent process using usleep(1000); //1 ms delay
 
-4. **fork the exec:** 
+4. **fork the exec:**
+* fork() creates a new child process.
+* exec() replaces the child process with a new process.
+* This new process inherits the PID of the old one.
+* Has new memory space.
+
 5. **wait() in the child process**:
+
 6. **using waitpid()**:
+
 7. **Closes STDOUT_FILENO**:
+
+
 8. **Connects standard output of one to standard input of the other using pipe()**:

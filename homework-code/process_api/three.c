@@ -1,31 +1,34 @@
-# include <stdio.h>
-# include <stdlib.h>
-# include <unistd.h>
-# include <sys/wait.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/wait.h>
 
+int main() {
+    pid_t pid = fork();
 
-global int f=0;
+    if (pid == 0) {  // Child process
+        char *args[] = {"ls", "-l", NULL};
+        
+        // Uncomment one at a time to test different exec() variants:
+	//execl("/bin/ls", "ls", "-l", NULL);       // Uses absolute path, separate args
+        execle("/bin/ls", "ls", "-l", NULL, env); // Uses absolute path, custom env
+        // execlp("ls", "ls", "-l", NULL);           // Searches PATH, separate args
+        // execv("/bin/ls", args);                   // Uses absolute path, array args
+       // execvp("ls", args);                          // Searches PATH, array args
+        // execvpe("ls", args, env);                 // PATH + custom env
+        
+        perror("exec failed"); // Only prints if exec() fails
+        exit(1);
+    } 
+    else if (pid > 0) { // Parent process
+        wait(NULL); // Wait for child to finish
+        printf("Parent process completed.\n");
+    } 
+    else {
+        perror("fork failed");
+        exit(1);
+    }
 
-int main(void)
-{
-	printf("Before fork: (PID: %d)\n",getpid());
-	int rx=fork();
-	if(rx==0)
-	{
-	//	printf("Child process: (PID: %d, Parent PID: %d)\n",getpid(),getppid());
-		printf("hello\n");
-		f=1;
-	}
-	else if (rx<0)
-	{
-		printf("Child creation failed! \n");
-	}
-	else
-	{
-	//	printf("Parent process: (PID: %d, Child PID: %d)\n",getpid(),rx);
-		if(f==1){	
-		printf("Goodbye\n");
-		}
-	}
-
+    return 0;
 }
+
