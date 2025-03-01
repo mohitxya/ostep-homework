@@ -39,7 +39,13 @@ Child has finished it's process.
 6. **using waitpid()**:
 * waitpid allows us to wait for a specific process, instead of any child.
 * usage: waitpid(pid_of_child, exit_value, {0: default, i.e. blocks until child exits}) 
-7. **Closes STDOUT_FILENO**:
 
+7. **Closes STDOUT_FILENO**:
+* Closing the file descriptor 1: STDOUT_FILENO causes the child's print statement to not work.
+* Similarly, we could also closea STDERR_FILENO.
 
 8. **Connects standard output of one to standard input of the other using pipe()**:
+* using pipe we can communicate between two processes.
+* ```int fd[2]: treat 0 as read and 1 as write ```
+* We close read while writing and close write while reading.
+* ```write(fd[1],message,size(message)) and read(fd[0],buffer,sizeof(buffer))```
