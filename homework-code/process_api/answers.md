@@ -33,9 +33,12 @@ Child has finished it's process.
 * Has new memory space.
 
 5. **wait() in the child process**:
+* wait outputs the PID of child process when parent executes it.
+* wait outputs -1 if no child process remains.
 
 6. **using waitpid()**:
-
+* waitpid allows us to wait for a specific process, instead of any child.
+* usage: waitpid(pid_of_child, exit_value, {0: default, i.e. blocks until child exits}) 
 7. **Closes STDOUT_FILENO**:
 
 
