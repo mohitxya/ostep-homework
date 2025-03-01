@@ -1,0 +1,2 @@
+Message from PARENT (PID: 4863)
+Message from CHILD (PID: 4864)
