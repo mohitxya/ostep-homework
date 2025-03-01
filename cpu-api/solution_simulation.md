@@ -23,5 +23,9 @@ a---b---c---d
 > In a Unix-like operating system any orphaned process will be immediately adopted by an implementation-defined system process: the kernel sets the parent to this process. This operation is called re-parenting and occurs automatically. Even though technically the process has a system process as its parent, it is still called an orphan process since the process that originally created it no longer exists. In other systems orphaned processes are immediately terminated by the kernel. 
 
 
+5. Done
+
+6. If some intermediate processes whave "Exited" it's hard to ascertain their constituent processes.
+
 
 
