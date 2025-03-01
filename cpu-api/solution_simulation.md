@@ -12,8 +12,10 @@
 4. What happens to orphaned processes?
 * a ---b 
 * a---b---c 
-* a--b--c--e
-*       |__d
+```
+a---b---c---d
+        |___e
+```
 * c exits: then The child processes get attached to the root node, i.e a.
 * the above happens when there is no -R flag. 
 * with R-flag the children get attached to the immediate parent of c, i.e. b.
