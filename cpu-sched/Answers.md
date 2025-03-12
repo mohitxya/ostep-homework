@@ -38,3 +38,7 @@
 As quantum length increases: The response time increases. 
 ### Equation (worst-case response time, N jobs): 
 
+- ith job gets response at: Ri=(i-1)*Q.
+- Assuming all jobs are of same length: Q.
+- We'll have high response time when the longest job arrives first, then the shorter, so on...
+- 1,2,3,4 => 0+1+3+6=10, 4,3,2,1=> 0,4,7,9=20
