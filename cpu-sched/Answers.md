@@ -11,14 +11,14 @@
 
 - SJF and FIFO would have the same performance in this case.
 
-2. *100,200,300*
+2. **100,200,300**
   * response time (SJF): 0+100+300/3=400/3
   * turnaround time: 100+300+600/3=1000/3
   * wait time: 0+100+300/3=400/3
 
 - Same for SJF and FIFO.
 
-3. *RR scheduler*:
+3. **RR scheduler**:
 - Runs each job for 1 s.
 - Can be calculated using Arithmetic progression. 
 - For job 1: 0,3,6,....100 such cycles. i.e. 297+1=298. 
