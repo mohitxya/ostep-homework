@@ -35,5 +35,6 @@
 6. Response time increases.
 
 7. 
-As quantum length increases: The response time increases. (avg) 
-Equation (worst-case response time, N jobs): 
+As quantum length increases: The response time increases. 
+### Equation (worst-case response time, N jobs): 
+
