@@ -7,10 +7,10 @@ These are the solutions I came up with while working through the book.
 ### Progress:
 
 #### Virtualization
-- [ ] Chapter 4: Processes
-- [ ] Chapter 5: Process API
-- [ ] Chapter 6: Direct Execution
-- [ ] Chapter 7: CPU Scheduling
+- [x] Chapter 4: Processes
+- [x] Chapter 5: Process API
+- [x] Chapter 6: Direct Execution
+- [x] Chapter 7: CPU Scheduling
 - [ ] Chapter 8: Multi-Level Feedback Queue
 - [ ] Chapter 9: Lottery Scheduling
 - [ ] Chapter 10: Multi-CPU Scheduling
