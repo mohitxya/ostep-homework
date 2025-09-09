@@ -6,7 +6,7 @@ These are the solutions I came up with while working through the book.
 
 ### Progress:
 
-### I.Virtualization
+### I. Virtualization
 #### CPU: 
 - [x] Chapter 4: Processes
 - [x] Chapter 5: Process API
@@ -27,7 +27,7 @@ These are the solutions I came up with while working through the book.
 - [ ] Chapter 21: Beyond physical memory: Mechanisms
 - [ ] Chapter 22: Beyond physical memory: Policies
 
-### II.Concurrency
+### II. Concurrency
 - [ ] Chapter 27: Thread API
 - [ ] Chapter 28: Locks
 - [ ] Chapter 29: Lock-based concurrent data structures
@@ -36,7 +36,7 @@ These are the solutions I came up with while working through the book.
 - [ ] Chapter 32: Common concurrency problems
 - [ ] Chapter 33: Event-based concurrency (Advanced)
 
-### III.Persistence
+### III. Persistence
 - [ ] Chapter 37: Hard Disk Drives
 - [ ] Chapter 38: RAIDs
 - [ ] Chapter 39: Files and Directories
