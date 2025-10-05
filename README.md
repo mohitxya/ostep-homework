@@ -28,7 +28,7 @@ These are the solutions I came up with while working through the book.
 - [ ] Chapter 22: Beyond physical memory: Policies
 
 ### II. Concurrency
-- [ ] Chapter 27: Thread API
+- [x] Chapter 27: Thread API
 - [ ] Chapter 28: Locks
 - [ ] Chapter 29: Lock-based concurrent data structures
 - [ ] Chapter 30: Condition variables
