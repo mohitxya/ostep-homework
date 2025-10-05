@@ -37,5 +37,9 @@ Q.7)
 - Reading and writing, with no locks held. 
 
 Q.8)
+- Every access to done is guarded by lock. 
+- We use wait/signal pattern to avoid wastage of the CPU cycles. 
+- It is both correct and efficient. 
 
 Q.9)
+- Helgrind shows 0 errors. 
